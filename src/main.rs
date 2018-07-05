@@ -70,10 +70,10 @@ fn main() {
             storage: actor.clone(),
         });
         setup_app(app)
-    }).bind("0.0.0.0:8080")
+    }).bind("127.0.0.1:8080")
         .unwrap()
         .start();
 
-    println!("Started http server: 0.0.0.0:8080");
+    println!("Started http server: http://127.0.0.1:8080");
     let _ = sys.run();
 }
